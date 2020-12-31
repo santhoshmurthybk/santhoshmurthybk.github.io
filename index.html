@@ -35,6 +35,7 @@
                         <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                         <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                        <li class="nav__item"><div class="nav__link" onclick="enableLightMode()"><i class='bx bxs-adjust'></i> Light/Dark</div></li>
                     </ul>
                 </div>
             </nav>
@@ -397,5 +398,11 @@
         
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            function enableLightMode() {
+               var element = document.body;
+               element.classList.toggle("light-mode");
+            }
+        </script>
     </body>
 </html>

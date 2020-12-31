@@ -12,11 +12,11 @@
 
   /*===== Colors =====*/
   --first-colour: #CC4B2C;
-  --first-colour-dark: #662616;
-  --first-colour-darken: #290F09;
-  --text-colour: #54423D;
+  --first-colour-dark: #ebd5d0;
+  --first-colour-darken: #ebd5d0;
+  --text-colour:#EAE7E6 ;
   --first-colour-light: #EAE7E6;
-  --first-colour-lighten: #FFFAFA;
+  --first-colour-lighten: black;
 
   /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
@@ -586,7 +586,7 @@ img{
 
 .footer__copy{
   font-size: var(--smaller-font-size);
-  color: var(--text-colour);
+  color: var(--first-colour);
 }
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
@@ -667,5 +667,14 @@ img{
   .works__container{
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
+.light-mode {
+  /*===== Colors =====*/
+  --first-colour: #CC4B2C;
+  --first-colour-dark: #662616;
+  --first-colour-darken: #290F09;
+  --text-colour: #54423D;
+  --first-colour-light: #EAE7E6;
+  --first-colour-lighten: #FFFAFA;
 }
