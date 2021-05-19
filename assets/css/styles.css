@@ -407,6 +407,8 @@ img{
   color: var(--text-black-900);
   margin: 0;
 }
+
+* .home-section .home-text h2{ color:var(--text-black-900); text-decoration: none;}
 .home-section .home-text h1{
   font-size: 20px;
   font-weight: 500;
