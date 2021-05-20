@@ -6,415 +6,397 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <link rel="stylesheet" href="assets/css/style-switcher.css">
+        <link rel="stylesheet" href="assets/css/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="assets/css/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="assets/css/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="assets/css/color-4.css" class="alternate-style" title="color-4" >
+        <link rel="stylesheet" href="assets/css/color-5.css" class="alternate-style" title="color-5" disabled>
+        <link rel="stylesheet" href="assets/css/responsive.css">
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio | Santhosh</title>
     </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>              
-                <div>
-                    <a href="#"class="nav__logo">santhosh.</a>
-                </div>
+    <body class="dark">
 
-                <div class="nav__menu" id="nav-menu">
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x' ></i>
+        <div class="preloader">
+            <div class="box">
+                <div></div><div></div><div></div>
+            </div>
+        </div>
+
+        <!-- ===== Header ===== -->
+        <header class = "header">
+            <div class = "container">
+                <div class = "row justify-content-between">
+                    <div class = "logo">
+                        <a href="index.html">S</a>
                     </div>
-
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
-                        <li class="nav__item"><div class="nav__link" onclick="enableLightMode()"><i class='bx bxs-adjust'></i> Light/Dark</div></li>
-                    </ul>
+                    <div class="hamburger-btn outer-shadow hover-in-shadow">
+                        <span></span>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__data">
-                        <div class="home__img">
-                            <img src="assets/img/perfil.png" alt="">
-                        </div>
-                        <h1 class="home__title">Santhosh Murthy</h1>
-                        <span class="home__profession">Full Stack Developer</span>
-                        <div class="home__social">
-                            <a href="https://in.linkedin.com/in/santhosh-murthy-4bb5b579" target="_blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
-                            <a href="https://github.com/santhoshmurthybk" target="_blank" class="home__social-link"><i class='bx bxl-github'></i></a>
-                        </div>
-                        <a download href="assets/resume/Santhosh.pdf" class="button home__button">Download Resume</a>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About Me</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__data">
-                        <p class="about__description">Innovative optimised solution seeker, excited to be at the development phase of my career as a Full stack developer with 4+ years of extensive experience in participating in all phases of software development. Possess a strong attention to detail, well-developed time management skills, and ability to complete all projects within schedule and in a timely manner. </p>
-                    </div>
-                    <div>
-                        <div class="about__information">    
-                            <h3 class="about__information-title">Information</h3>
-    
-                            <div class="about__information-data">
-                                <i class='bx bx-user about__information-icon' ></i>
-                                <span>Santhosh Murthy B K</span>
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class='bx bx-envelope about__information-icon' ></i>
-                                <span>santhoshmurthy9@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="about__information">    
-                            <h3 class="about__information-title">Experience</h3>
-    
-                            <div class="about__information-data">
-                                <i class='bx bx-medal about__information-icon' ></i>
-                                <div>
-                                    <span class="about__information-subtitle">4+ Years Job</span>
-                                    <span class="about__information-subtitle-small">Experience</span>
-                                </div>
-                                
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class='bx bx-briefcase about__information-icon' ></i>
-                                <div>
-                                    <span class="about__information-subtitle">10+ Projects</span>
-                                    <span class="about__information-subtitle-small">Completed</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">My expertise</h2>
-
-                <div class="skills__container bd-grid">  
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">Backend</h3>
-
-                        <div class="skills__data">
-                            <span class="skills__name">NodeJS</span>
-                            <span class="skills__number">90%</span>
-                            <span class="skills__bar skills__node"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">C#</span>
-                            <span class="skills__number">60%</span>
-                            <span class="skills__bar skills__csharp"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Firebase</span>
-                            <span class="skills__number">50%</span>
-                            <span class="skills__bar skills__firebase"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">Frontend</h3>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Html/css</span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__html"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">ReactJS</span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__react"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">React-Native</span>
-                            <span class="skills__number">50%</span>
-                            <span class="skills__bar skills__react-native"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">APIs</h3>
-
-                        <div class="skills__data">
-                            <span class="skills__name">GraphQL</span>
-                            <span class="skills__number">80%</span>
-                            <span class="skills__bar skills__graphql"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">RESTful</span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__restful"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">Build and Deployment Tools</h3>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Jenkins</span>
-                            <span class="skills__number">60%</span>
-                            <span class="skills__bar skills__jenkins"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Docker</span>
-                            <span class="skills__number">60%</span>
-                            <span class="skills__bar skills__docker"></span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--===== CERTIFICATION =====-->
-            <section class="about section">
-                <h2 class="section-title">My Certifications</h2>
-                <div class="cert__container bd-grid">  
-                    <div class="skills__content">
-                        <div class="about__information-data">
-                            <i class='bx bx-certification about__information-icon' ></i>
-                            <div>
-                                <span class="about__information-subtitle">Enterprise Design Thinking Co-Creator</span>
-                                <span class="about__information-subtitle-small">Issued: Jan 2021</span>
-                                <div>
-                                    <span class="about__information-subtitle-small"><a href="https://www.youracclaim.com/badges/fe0d9f15-bcd4-4585-b0c7-a6d5b44b7b7a" target="_blank" > <i class='bx bx-check-square cert__information-icon'></i>See Credential</a></span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="about__information-data">
-                            <i class='bx bx-certification about__information-icon' ></i>
-                            <div>
-                                <span class="about__information-subtitle">Enterprise Design Thinking Practitioner</span>
-                                <span class="about__information-subtitle-small">Issued: Jul 2020</span>
-                                <div>
-                                    <span class="about__information-subtitle-small"><a href="https://www.youracclaim.com/badges/1a0c5e29-f439-47be-bccc-bcc7ff4a5b09" target="_blank" > <i class='bx bx-check-square cert__information-icon'></i>See Credential</a></span>
-                                </div>
-                                
-                            </div>
-                        </div>
-
-                        <div class="about__information-data">
-                            <i class='bx bx-certification about__information-icon' ></i>  
-                            <div>
-                                <span class="about__information-subtitle">Microsoft Technology Associate: Software Development Fundamentals (MTA)</span>
-                                <span class="about__information-subtitle-small">Issued: Jul 2016</span>                      
-                                <div>
-                                    <span class="about__information-subtitle-small"><a href="https://www.youracclaim.com/badges/00041f1d-998d-4443-b5aa-08680ab6bf95" target="_blank" > <i class='bx bx-check-square cert__information-icon'></i>See Credential</a></span>
-                                </div>
-                            </div>
-                        </div>             
-                            
-                        <div class="about__information-data">
-                            <i class='bx bx-certification about__information-icon' ></i>
-                            <div>
-                                <span class="about__information-subtitle">Scrum Foundation Professional Certificate</span>
-                                <span class="about__information-subtitle-small">Issued: Aug 2020 Expires: Aug 2022</span>
-                                <div>
-                                    <span class="about__information-subtitle-small"><a href="https://www.youracclaim.com/badges/d5fc80dd-9869-4879-a96d-a6472f25132c" target="_blank" > <i class='bx bx-check-square cert__information-icon'></i>See Credential</a></span>
-                                </div>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== EDUCATION =====-->
-            <section class="about section">
-                <h2 class="section-title">My Education</h2>
-                <div class="cert__container bd-grid">  
-                    <div class="about__information-data">
-                        <i class='bx bxs-book-open about__information-icon'></i>
-                        <div>
-                            <h3 class="education__year">2012- 2016</h3>
-                            <div class="education__degree">Bachelor of Engineering (ECE)</div>
-                            <div class="education__university">Visvesvaraya Technological University</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== EXPERIENCE =====-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">My Experience</h2>
-
-                <div class="experience__container bd-grid">
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience__designation">Associate Senior Software Engineer</h3>
-                            <h3 class="experience__company">Cerner Corporation </h3>
-                            <span class="experience__year">Nov 2019 - Present</span>
-                        </div>
-                    </div>
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience__designation">Software Engineer</h3>                            
-                            <h3 class="experience__company">Cerner Corporation </h3>
-                            <span class="experience__year">Aug 2018 - Nov 2019 </span>
-                        </div>
-                    </div>
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience__designation">Software Development Senior Associate</h3>
-                            <h3 class="experience__company">NTT Data Services</h3>
-                            <span class="experience__year">Aug 2016 - Aug 2018</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--===== WORKS =====-->
-            <section class="works section" id="works"> 
-                <h2 class="section-title">Recent Works</h2>
-
-                <div class="works__container bd-grid">
-
-                    <div class="works__img">
-                        <img src="assets/img/work7.png" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/covid19-tracker" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">Covid-19 Tracker</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work6.png" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/webdriver-io-regression" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">Regression Suite in Webdriver IO</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work5.png" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/react-graphql-amplify" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">ReactJS, GraphQL API with AWS Amplify</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/three-card-game-nodejs" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">Three Card Game NodeJS</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/click-game" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">The Click Game</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/react-native-to-do-app" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">To-do List React Native</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                        
-                        <div class="works__data">
-                            <a href="https://github.com/santhoshmurthybk/react-to-do-list-code" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works__title">To-do List ReactJS</span>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">E-mail</h3>
-                        <span class="contact__text">santhoshmurthy9@gmail.com</span>
-                    </div>
-    
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Location</h3>
-                        <span class="contact__text">Bengaluru, KA, India</span>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <h1 class="footer__title">Santhosh Murthy B K</h1>
-                <p class="footer__description">I am Santhosh and this is my portfolio, consult me here.</p>
-                
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/santhosh.murthy.317" target="_blank" class="footer__link"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/santhoshmurthybk" target="_blank" class="footer__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/SanthoshMBK" target="_blank" class="footer__link"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://santhoshmurthybk.wordpress.com/" target="_blank" class="footer__link"><i class='bx bxl-wordpress' ></i></a>
-                </div>
-
-                <p class="footer__copy">All right reserved by Santhosh - 2020</p>
+        <!-- ===== Navigation Menu ===== -->
+        <nav class="nav-menu">
+            <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+            <div class="nav-menu-inner">
+                <ul>
+                    <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                    <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                    <li><a href="#works" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
+                    <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+                </ul>
             </div>
-        </footer>
-        
-        <!--===== MAIN JS =====-->
+            <p class="copyright-text">&copy; 2021 SanthoshMBK</p>
+        </nav>
+        <div class="fade-out-effect">
+        </div>
+
+        <!-- ===== Home ===== -->
+        <section class="home-section section active" id="home">
+            <div class="effect-wrap">
+                <div class="effect effect-1"></div>
+                <div class="effect effect-2">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="effect effect-3"></div>
+                <div class="effect effect-4"></div>
+                <div class="effect effect-5">
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row full-screen align-items-center">
+                    <div class="home-text">
+                        <p>Hello</p>
+                        <h2>
+                            <a class="typewrite" data-period="2000" data-type='[ "I am Santhosh.", "I ❤ to design.", "I ❤ to develop.", "I ❤ to code." ]'></a>
+                            <span class="wrap"></span>
+                        </h2>
+                        <h1>Full Stack Developer</h1>
+                        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                    </div>
+                    
+                    <div class="home-img">
+                        <div class="img-box inner-shadow">
+                            <img src="assets/img/prefil.png" class="outer-shadow" alt="profile-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section " id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="main info">About me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-info">
+                        <p>Innovative optimised solution seeker, excited to be at the development phase of my career as a Full stack developer with 4+ years of extensive experience in participating in all phases of software development. Possess a strong attention to detail, well-developed time management skills, and ability to complete all projects within schedule and in a timely manner.</p>
+                    </div>
+                </div>
+                <div class="download-cv">
+                    <a download href="assets/resume/Santhosh.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+                    <div class="contact-me">
+                        <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow" >Contact Me</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="about-tabs">
+                        <span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
+                        <span class="tab-item" data-target=".experience">Experience</span>
+                        <span class="tab-item" data-target=".education">Education</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skills tab-content active">
+                        <div class="row">
+                            <div class="skill-item">
+                                <p>Node</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(90% - 14px)">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>C#</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(75% - 14px)">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>HTML/CSS</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(85% - 14px)">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>React</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>GraphQL API</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Restful API</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(70% - 14px)">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Jenkins</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(60% - 14px)">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Docker</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(50% - 14px)">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="experience tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="bx bx-briefcase icon" ></i>
+                                            <span>Nov, 2019 - Jun, 2021</span>
+                                            <h3>Associate Senior Software Engineer</h3>
+                                            <h4>Cerner Corporation, India</h4>
+                                            <p>Developed web services and front-end web components in the following technologies: JavaScript, React, GraphQL, Node.js, Express</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="bx bx-briefcase icon" ></i>
+                                            <span>Aug, 2018 - Nov, 2019</span>
+                                            <h3>Software Engineer</h3>
+                                            <h4>Cerner Corporation, India</h4>
+                                            <p>Worked as part of the application development team, contributing to team projects and developing applications and services</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="bx bx-briefcase icon" ></i>
+                                            <span>Dec, 2016 - Aug, 2018</span>
+                                            <h3>Software Development Senior Associate</h3>
+                                            <h4>NTT Data Services, India</h4>
+                                            <p>Developed custom modules & interfaces in C# .NET technologies</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="bx bx-briefcase icon" ></i>
+                                            <span>Aug, 2016 - Dec, 2016</span>
+                                            <h3>Software Intern</h3>
+                                            <h4>NTT Data Services, India</h4>
+                                            <p>Trained in C#, ASP.NET, NodeJS and ReactJS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="education tab-content">
+                        <div class="about__information-data outer-shadow">
+                            <i class='bx bxs-book-open about__information-icon'></i>
+                            <div>
+                                <h3 class="education__year">2012- 2016</h3>
+                                <div class="education__degree">Bachelor of Engineering (ECE)</div>
+                                <div class="education__university">Visvesvaraya Technological University</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio-section section " id="works">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="Portfolio">Latest Works</h2>
+                    </div>
+                </div>
+                <div class="row portfolio-items">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/covid19-tracker" target="_blank">
+                                    <img src="assets/img/work7.png" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">Covid-19 Tracker</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/webdriver-io-regression" target="_blank">
+                                    <img src="assets/img/work6.png" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">Regression Suite in Webdriver IO</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/react-graphql-amplify" target="_blank">
+                                    <img src="assets/img/work5.png" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">ReactJS, GraphQL API with AWS Amplify</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/three-card-game-nodejs" target="_blank">
+                                    <img src="assets/img/work4.jpg" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">Three Card Game NodeJS</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/react-native-to-do-app" target="_blank">
+                                    <img src="assets/img/work2.jpg" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">To-do List React Native</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <a href="https://github.com/santhoshmurthybk/react-to-do-list-code" target="_blank">
+                                    <img src="assets/img/work1.jpg" alt=""/>
+                                    <span class="view-project">View Project</span>
+                                </a>
+                            </div>
+                            <p class="portfolio-item-title">To-do List ReactJS</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="contact-section section " id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="contact">Get In Touch</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class='bx bxs-phone'></i>
+                            <span>Phone</span>
+                            <p>+91-7259481509</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class='bx bxs-envelope' ></i>
+                            <span>Email</span>
+                            <p>santhoshmurthy9@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class='bx bxs-location-plus' ></i>
+                            <span>Address</span>
+                            <p>Bengaluru, KA, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links-contact">
+                    <a href="https://github.com/santhoshmurthybk" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-github'></i></a>
+                    <a href="https://in.linkedin.com/in/santhosh-murthy-4bb5b579" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/santhosh.murthy.317" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/santhoshmurthybk" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/SanthoshMBK" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://santhoshmurthybk.wordpress.com/" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-wordpress' ></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="style-switcher outer-shadow">
+            <div class="style-switch-toggler s-icon outer-shadow hover-in-shadow">
+                <i class='bx bxs-cog bx-spin' ></i>
+            </div>
+            <div class="day-night s-icon outer-shadow hover-in-shadow">
+                <i class='bx ' ></i>
+            </div>
+
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+
+
         <script src="assets/js/main.js"></script>
-        <script>
-            function enableLightMode() {
-               var element = document.body;
-               element.classList.toggle("light-mode");
-            }
-        </script>
+        <script src="assets/js/style-switcher.js"></script>
     </body>
 </html>
