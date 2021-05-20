@@ -146,3 +146,10 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000000}";
     document.body.appendChild(css);
 };
+
+window.addEventListener("load", () =>{
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(()=>{
+        document.querySelector(".preloader").style.display = "none"
+    },600)
+})
